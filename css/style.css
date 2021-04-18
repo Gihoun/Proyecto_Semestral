@@ -1,0 +1,27 @@
+body{
+    margin: 0px;
+}
+
+.header-background{
+    background-color: cornflowerblue;
+    overflow: hidden;
+}
+.nav-menu{
+    padding: 15px;
+    flex-wrap: wrap;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: larger;
+}
+.nav-menu a{
+    text-decoration: none;
+    color: rgb(12, 12, 12);
+    margin-right: 5px;
+    font-style: oblique;
+    border: rgb(12, 12, 12) 1px;
+    block-size: auto;
+}
+.nav-menu a:hover{
+    color: yellowgreen;
+    
+
+}
