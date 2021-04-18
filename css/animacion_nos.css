@@ -1,21 +1,5 @@
-.card img:hover {
-    animation: animate_animated animate__pulse; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 1s; /* don't forget to set a duration! */
-    animation-delay: 2s;
-}
-.ico2 {
-    animation: fadeInRight; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 2s; /* don't forget to set a duration! */
-
-}
-.ico3 {
-    animation: fadeInRight; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 3s; /* don't forget to set a duration! */
-
-}
-.bloques-nosotros:hover{
-
-    margin-right: 50px;
-
+#tarjeta:hover{
+    animation: pulse;
+    animation-duration: 2s;
 
 }
