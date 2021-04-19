@@ -3,3 +3,29 @@
     animation-duration: 2s;
 
 }
+#ico_up:hover{
+    animation: shakeX ;
+    animation-duration: 1s;
+
+}
+#ico_mid:hover{
+    animation: swing ;
+    animation-duration: 1s;
+}
+#ico_down:hover{
+    animation: shakeX;
+    animation-duration: 1s;
+}
+#ico_up1:hover{
+    animation: backInDown;
+    animation-duration: 1s;
+
+}
+#ico_mid1:hover{
+    animation: swing ;
+    animation-duration: 1s;
+}
+#ico_down1:hover{
+    animation: backInUp;
+    animation-duration: 1s;
+}
