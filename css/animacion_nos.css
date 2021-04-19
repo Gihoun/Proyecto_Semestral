@@ -16,16 +16,11 @@
     animation: shakeX;
     animation-duration: 1s;
 }
-#ico_up1:hover{
-    animation: backInDown;
-    animation-duration: 1s;
 
+#boton:hover{
+    background-color: rgb(207, 191, 221);
 }
-#ico_mid1:hover{
-    animation: swing ;
-    animation-duration: 1s;
-}
-#ico_down1:hover{
-    animation: backInUp;
-    animation-duration: 1s;
+#boton{
+    border-color: cornflowerblue;
+    color: darkblue;
 }

@@ -4,7 +4,7 @@ p{
 }
 
 header{
-    background-color: aquamarine;
+    
     overflow: visible;
 }
 .carousel-caption a{
@@ -16,7 +16,7 @@ header{
     margin: 0px;
     border-radius: 5px;
     opacity: 0.8;
-    background-color: azure;
+   
     cursor: pointer;
 }
 .carousel-caption h3{
@@ -48,8 +48,17 @@ header{
 
 }
 #barra-busqueda{
-    background-color: blanchedalmond;
     border: solid 1px rgb(223, 220, 220);
     border-radius: 0px 0px 5px 5px;
     z-index: 100;
 }
+#btn_buscar:hover{
+    background-color: rgb(207, 191, 221);
+
+}
+
+#btn_buscar{
+    border-color: cornflowerblue;
+    color: darkblue;
+}
+
