@@ -1,0 +1,26 @@
+#tarjeta:hover{
+    animation: pulse;
+    animation-duration: 2s;
+
+}
+#ico_up:hover{
+    animation: shakeX ;
+    animation-duration: 1s;
+
+}
+#ico_mid:hover{
+    animation: swing ;
+    animation-duration: 1s;
+}
+#ico_down:hover{
+    animation: shakeX;
+    animation-duration: 1s;
+}
+
+#boton:hover{
+    background-color: rgb(207, 191, 221);
+}
+#boton{
+    border-color: cornflowerblue;
+    color: darkblue;
+}
