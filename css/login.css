@@ -4,9 +4,9 @@ p{
 }
 
 header{
-    background-color: aquamarine;
-    overflow: visible;
+    background-color: white;
 }
+
 .carousel-caption a{
     text-decoration: none;
 }
@@ -110,7 +110,7 @@ body{
     content: "\f023";
 }
 
-button{
+#button-reg{
     width: 60%;
     margin: 5px 0 25px;
 }
@@ -151,10 +151,6 @@ button{
 .contact-box {
     padding: 3rem;
 }
-
-
-
-
 
 
 .form-control {
