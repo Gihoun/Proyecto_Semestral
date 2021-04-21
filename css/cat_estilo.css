@@ -1,0 +1,12 @@
+.text:hover{
+    animation: pulse ;
+    animation-duration: 1s;
+
+}
+#boton:hover{
+    background-color: rgb(207, 191, 221);
+}
+#boton{
+    border-color: cornflowerblue;
+    color: darkblue;
+}
