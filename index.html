@@ -9,7 +9,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link type="text/css" rel="stylesheet" href="css/estilos.css">
+    <link type="text/css" rel="stylesheet" href="css/animacion_nos.css">
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet" href="/scss/custom.scss">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <script src='main.js'></script>
 </head>
 
@@ -19,8 +22,7 @@
         <header class="row">
             <nav class="navbar navbar-expand-xl navbar-light border">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html"><img src="img/Logos/logoCaos.png" alt=""
-                            width="100"></a>
+                    <a class="navbar-brand" href="index.html"><img src="img/Logos/logoCaos.png" alt="" width="100"></a>
                     <h1 class="me-2">Caos News</h1>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -44,7 +46,9 @@
                                     Noticias
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><h6 class="dropdown-header" >Por Categoria</h6></li>
+                                    <li>
+                                        <h6 class="dropdown-header">Por Categoria</h6>
+                                    </li>
                                     <li><a class="dropdown-item" href="#">Nacional</a></li>
                                     <li><a class="dropdown-item" href="#">Internacional</a></li>
                                     <li><a class="dropdown-item" href="#">Deporte</a></li>
@@ -65,10 +69,11 @@
                                 </a>
                             </li>
                             <li class="nav-item col-6 col-xl-auto">
-                                <a class="nav-link p-2 "  href="https://www.instagram.com/duocuc_cl/" target="_blank"
+                                <a class="nav-link p-2 " href="https://www.instagram.com/duocuc_cl/" target="_blank"
                                     rel="noopener">
                                     <img src="img/Icon/logo-instagram.svg" alt="" width="25">
-                                    <small class="d-xl-none ms-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Instagram">Instagram</small>
+                                    <small class="d-xl-none ms-2" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        title="Instagram">Instagram</small>
                                 </a>
                             </li>
                             <li class="nav-item col-6 col-xl-auto">
@@ -86,22 +91,26 @@
                                 </a>
                             </li>
                         </ul>
-                        <a class="btn btn-primary d-xl-inline-block my-2 my-xl-0 ms-xl-3" href="registrar.html">Registrar</a>
-                        <a class="btn btn-success d-xl-inline-block my-2 my-xl-0 ms-xl-3" href="ingresar.html">Ingresar</a>
+                        <a class="btn d-xl-inline-block my-2 my-xl-0 ms-xl-3" href="registrar.html"
+                            id="boton">Registrar</a>
+                        <a class="btn d-xl-inline-block my-2 my-xl-0 ms-xl-3" href="ingresar.html"
+                            id="boton">Ingresar</a>
                     </div>
                 </div>
             </nav>
         </header>
         <!--Barra de busqueda-->
-            <nav class="row navbar sticky-top" id="barra-busqueda" >
-                <div class="container-fluid ">
+        <nav class="row navbar navbar-expand-lg sticky-top" id="barra-busqueda">
+            <div class="container-fluid ">
+                <span class="navbar-text">
                     <h4>Noticias Frescas</h4>
-                    <form class="d-flex justify-content-end">
-                        <input  class="form-control me-2 " type="search" placeholder="Buscar" aria-label="Search">
-                        <button id="btn_buscar" class="btn btn-outline-success" type="submit">Buscar</button>
-                    </form>
-                </div>
-            </nav>
+                </span>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button id="btn_buscar" class="btn btn-outline" type="submit">Buscar</button>
+                </form>
+            </div>
+        </nav>
         <!--Careusel prototipo 1.0-->
         <div class="row ">
             <div id="carouselExampleCaptions" class="carousel slide mt-2" data-bs-ride="carousel">
@@ -118,26 +127,26 @@
                         <img src="img/Carousel/img-Carou-01.png" class="d-block w-100" alt="" height="400">
                         <div class="carousel-caption d-block d-md-block">
                             <a href="#">
-                            <h3 >Noticia 1</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quo?</p>
+                                <h3>Noticia 1</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quo?</p>
                             </a>
-                            
+
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img src="img/Carousel/img-Carou-02.png" class="d-block w-100" alt="" height="400">
                         <div class="carousel-caption d-block d-md-block">
                             <a href="#">
-                                <h3 >Noticia 1</h3>
+                                <h3>Noticia 1</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quo?</p>
                             </a>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img src="img/Carousel/img-Carou-03.png" class="d-block w-100" alt="" height="400">
-                        <div class="carousel-caption d-block d-md-block" >
+                        <div class="carousel-caption d-block d-md-block">
                             <a href="nosotros.html">
-                                <h3 >Noticia 1</h3>
+                                <h3>Noticia 1</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quo?</p>
                             </a>
                         </div>
@@ -159,7 +168,7 @@
         <div class="row">
             <div class="col-7 col-lg-9">
                 <div class="d-grid gap-3 mt-5">
-                    <div class="p-2 bg-light border shadow mb-3 bg-body rounded">
+                    <div class="p-2 bg-light border shadow mb-3 bg-body rounded" id="tarjeta">
                         <div class="float-start">
                             <img src="img/Carousel/news-02.jpg" class="m-3 rounded-3" alt="..." width="200"
                                 height="150">
@@ -186,7 +195,7 @@
                             <div class="text-end"><a href="#">Continuar Lectura</a></div>
                         </div>
                     </div>
-                    <div class="p-2 bg-light border shadow mb-3 bg-body rounded">
+                    <div class="p-2 bg-light border shadow mb-3 bg-body rounded " id="tarjeta">
                         <div class="float-start">
                             <img src="img/Carousel/news-01.jpg" class="m-3 rounded-3" alt="..." width="200"
                                 height="150">
@@ -213,7 +222,7 @@
                             <div class="text-end"><a href="#">Continuar Lectura</a></div>
                         </div>
                     </div>
-                    <div class="p-2 bg-light border shadow mb-3 bg-body rounded">
+                    <div class="p-2 bg-light border shadow mb-3 bg-body rounded " id="tarjeta">
                         <div class="float-start">
                             <img src="img/Carousel/news-03.jpg" class="m-3 rounded-3" alt="..." width="200"
                                 height="150">
@@ -240,7 +249,7 @@
                         </div>
                         <div class="text-end"><a href="#">Continuar Lectura</a></div>
                     </div>
-                    <div class="p-2 bg-light border shadow mb-3 bg-body rounded">
+                    <div class="p-2 bg-light border shadow mb-3 bg-body rounded" id="tarjeta">
                         <div class="float-start m-r-4">
                             <img src="img/Carousel/news-01.jpg" class="m-3 rounded-3" alt="..." width="200"
                                 height="150">
