@@ -54,7 +54,11 @@ header{
     z-index: 100;
 }
 body{
+<<<<<<< HEAD
     background: url(../img/Icon/background.jpg) no-repeat center center fixed;
+=======
+    background: url(./img/icon/background.jpg) no-repeat center center fixed;
+>>>>>>> 70c8ecb876d5bb1b6d5ef5413564fbb8ca7d0a83
     background-size: cover;
 }
 
