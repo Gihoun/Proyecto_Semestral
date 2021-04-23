@@ -176,10 +176,43 @@ textarea {
     padding-top: 20px;
     border-bottom: solid 4px black;
 }
-
 #autor div{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     font-style: italic;
     
+}
+#txt-news1{
+    padding-left: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    text-align: justify;
+}
+#txt-news1 img{
+    border: solid 1px black;
+    border-radius: 5px;
+    width: 38%;
+    height: 200px;
+    float: inline-end;
+    margin-left: 20px;
+}
+#gal-news1 {
+    position: relative;
+    padding: 30px;
+    display: inline-block;
+}
+#gal-news1 img{
+    width: 100%;
+    height: 150px;
+    margin-bottom: 45px;
+    border: solid 1px black;
+    border-radius: 5px;
+}
+#gal-news1 div a{
+    width: 100%;
+    text-decoration: none;
+    text-shadow: 2px 2px #e0cbf1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+
 }
