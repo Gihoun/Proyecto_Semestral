@@ -1,3 +1,5 @@
+
+
 p{
     text-align: justify;
     font-family: Arial, Helvetica, sans-serif;
@@ -15,24 +17,25 @@ header{
     margin: 0px;
     border-radius: 5px;
     opacity: 0.8;
-
     cursor: pointer;
+    transition: 0.8s;
 }
 .carousel-caption h3{ 
     text-align: center;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
     font-style: italic;
     color: black;
     opacity: 1;
     font-size: xx-large;
+    text-shadow: 2px 2px #e0dae2;
 }
 .carousel-caption p{
     text-align: center;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
     font-style: italic;
     color: black;
     text-overflow: clip;
-    opacity: 1;
+    
 }
 
 .bloques-nosotros{
