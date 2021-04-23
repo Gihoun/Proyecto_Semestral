@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="css/estilos.css">
+    <link type="text/css" rel="stylesheet" href="css/animacion_nos.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet" href="/scss/custom.scss">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="dist/css/lightbox.min.css">
+</head>
+
+<body>
+    <header class="row">
+        <nav class="navbar navbar-expand-xl navbar-light border">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="img/Logos/logoCaos.png" alt="" width="100"></a>
+                <h1 class="me-2">Caos News</h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contactanos.html">Contactanos</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Noticias
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <h6 class="dropdown-header">Por Categoria</h6>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Nacional</a></li>
+                                <li><a class="dropdown-item" href="#">Internacional</a></li>
+                                <li><a class="dropdown-item" href="#">Deporte</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Por Autor</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <hr class="d-xl-none text-white-75">
+                    <ul class="navbar-nav flex-row flex-wrap ms-xl-auto">
+                        <li class="nav-item col-6 col-xl-auto">
+                            <a class="nav-link p-2" href="https://www.youtube.com/c/DuocUCvideos/featured"
+                                target="_blank" rel="noopener">
+                                <img src="img/Icon/logo-youtube.svg" alt="" width="25">
+                                <small class="d-xl-none ms-2">Youtube</small>
+                            </a>
+                        </li>
+                        <li class="nav-item col-6 col-xl-auto">
+                            <a class="nav-link p-2 " href="https://www.instagram.com/duocuc_cl/" target="_blank"
+                                rel="noopener">
+                                <img src="img/Icon/logo-instagram.svg" alt="" width="25">
+                                <small class="d-xl-none ms-2" data-bs-toggle="tooltip" data-bs-placement="top"
+                                    title="Instagram">Instagram</small>
+                            </a>
+                        </li>
+                        <li class="nav-item col-6 col-xl-auto">
+                            <a class="nav-link p-2" href="https://twitter.com/DuocUC" target="_blank" rel="noopener">
+                                <img src="img/Icon/logo-twitter.svg" alt="" width="25">
+                                <small class="d-xl-none ms-2">Twitter</small>
+                            </a>
+                        </li>
+                        <li class="nav-item col-6 col-xl-auto">
+                            <a class="nav-link p-2" href="https://www.facebook.com/DuocUC/" target="_blank"
+                                rel="noopener">
+                                <img src="img/Icon/logo-facebook.svg" alt="" width="25">
+                                <small class="d-xl-none ms-2">Facebook</small>
+                            </a>
+                        </li>
+                    </ul>
+                    <a class="btn d-xl-inline-block my-2 my-xl-0 ms-xl-3" href="registrar.html" id="boton">Registrar</a>
+                    <a class="btn d-xl-inline-block my-2 my-xl-0 ms-xl-3" href="registrar.html" id="boton">Ingresar</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--Barra de busqueda-->
+    <section class="container-fluid">
+        <nav class="row navbar sticky-top" id="barra-busqueda">
+            <div class="container-fluid ">
+                <h4>Noticias Frescas</h4>
+                <form class="d-flex justify-content-end">
+                    <input class="form-control me-2 " type="search" placeholder="Buscar" aria-label="Search">
+                    <button id="btn_buscar" class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+        </nav>
+    </section>
+    <div class="bg-news">
+        <section class="container-fluid" id="banner-noti">
+            <div>
+                <img src="img/Galeria-prototipo/img_mountains_wide.jpg" alt="">
+                <div>
+                    <h1>Noticia 1 - Ubicación</h1>
+                </div>
+                <div>
+                    <h2>Internacional</h2>
+                </div>
+            </div>
+        </section>
+        <section id="autor" class="container-fluid">
+            <div>
+                <p>Autor: Annon</p>
+            </div>
+            <div>
+                <span>Fecha: XX-XX-XXXX</span>
+            </div>
+        </section>
+    </div>
+    <div class="row">
+        <section class="container-fluid">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit asperiores, sed quas commodi saepe
+                consequatur, dolores a aliquam doloribus recusandae consectetur quam veritatis optio qui voluptas quidem
+                rem voluptatibus? Dolores!
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus, cumque qui. Ea voluptates ut
+                vitae delectus sunt voluptatum modi repellendus hic, adipisci, quae et corporis quis dignissimos
+                expedita similique architecto.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium, deserunt dignissimos? Dolorem
+                error veniam quidem nesciunt consequuntur reprehenderit! Alias et nisi ut commodi tenetur consequuntur
+                dolores at quasi blanditiis accusantium.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere mollitia ullam, laborum consequuntur
+                vitae impedit sunt neque, quis voluptatum quasi magnam? Iure voluptatum necessitatibus, voluptates ad
+                voluptate quia similique ex?
+            </p>
+        </section>
+
+    </div>
+
+    <script src="dist/js/lightbox-plus-jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
