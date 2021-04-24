@@ -110,7 +110,7 @@
             </div>
         </nav>
         <!--Careusel prototipo 1.0-->
-        <div class="row ">
+        <div class="row m-0">
             <div id="carouselExampleCaptions" class="carousel slide mt-2" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -122,7 +122,7 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="img/Galeria-prototipo/onu.jpg" class="d-block w-100" alt="" height="400">
+                        <img src="img/Galeria-prototipo/onu.jpg" class="d-block w-100" alt="" height="425">
                         <div class="carousel-caption d-block d-md-block">
                             <a href="noticia-01.html">
                                 <h3>Noticia 1</h3>
@@ -132,7 +132,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="img/Galeria-prototipo/nacional1.jpg" class="d-block w-100" alt="" height="400">
+                        <img src="img/Galeria-prototipo/nacional1.jpg" class="d-block w-100" alt="" height="425">
                         <div class="carousel-caption d-block d-md-block">
                             <a href="noticia-02.html">
                                 <h3>Noticia 2</h3>
@@ -141,7 +141,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="img/Galeria-prototipo/depo1.jpg" class="d-block w-100" alt="" height="400">
+                        <img src="img/Galeria-prototipo/depo1.jpg" class="d-block w-100" alt="" height="425">
                         <div class="carousel-caption d-block d-md-block">
                             <a href="noticia-03.html">
                                 <h3>Noticia 3</h3>
@@ -272,7 +272,9 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="text-end"><a href="#">Continuar Lectura</a></div>
+                        <div class="text-end">
+                            <a href="#">Continuar Lectura</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -318,8 +320,8 @@
                     </table>
                 </div>
                 <!--Entrevista-->
-                <div class=" container-fluid">
-                    <div class="card shadow mb-3 bg-body rounded">
+                <div class=" container">
+                    <div class="card shadow bg-body rounded">
                         <iframe src="https://www.youtube.com/embed/hgNr49A2fcE" title="YouTube video player"
                             frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -334,22 +336,40 @@
                 </div>
             </div>
         </div>
-        <!--Footer-->
-        <div class="row bg-light border">
-            <div class="row d-inline-block">
-                <a href="index.html">Inicio</a>
-                <a href="nosotros.html">Nosotros</a>
-                <a href="#">Contactanos</a>
+        <!--El footer 1.0-->
+        <footer class="text-center text-lg-start" id="foot-link">
+            <div class="container-fluid m-4">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 md-4 mb-md-0">
+                        <h5 class="text-uppercase">Disclaimer? o algo?</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, necessitatibus numquam!
+                            Esse nihil labore nam laboriosam saepe debitis, perspiciatis eos assumenda atque, voluptatem
+                            odio dolores id? Quidem eius doloremque iure?</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 md-4 mb-md-0">
+                        <h5 class="text-uppercase">Noticias</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li><a href="categoria_nac.html">Nacional</a></li>
+                            <li><a href="categoria_inac.html">Internacional</a></li>
+                            <li><a href="categoria_deporte.html">Deportes</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 md-4 mb-md-0 ">
+                        <h5 class="text-uppercase">Sitios de Interes</h5>
+                        <ul class="list-unstyled mb-0 ">
+                            <li><a href="https://www.biobiochile.cl/">Radio BioBio</a></li>
+                            <li><a href="https://www.latercera.com/">La Tercera</a></li>
+                            <li><a href="https://www.duoc.cl/">Duoc Uc</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <hr class="d-xl-none text-white-75">
-            <div class="row d-inline-block">
-                <p>Noticias</p>
-                <a href="#">Por Categoria</a>
-                <a href="#">Internacional</a>
-                <a href="#">Nacional</a>
+            <div class="text-end p-4" id="copy-R">
+                Todos los derechos reservados | © 2021 DuocUc Pte. Alto
             </div>
-        </div>
+        </footer>
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
         crossorigin="anonymous"></script>
