@@ -1,0 +1,20 @@
+#galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: cursive;
+}
+#galeria div{
+    padding: 15px;
+}
+#galeria img{
+    width: 270px;
+    height: 270px;
+    border: solid 5px cornflowerblue;
+    border-radius: 20px;
+}
+#galeria div h5{
+    text-align: center;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-style: normal;
+}
