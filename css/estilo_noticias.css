@@ -1,6 +1,6 @@
 .bg-news{
-    background: linear-gradient(#e0cbf1, #e8e8f1);
-
+    background:linear-gradien(#e3cff3,#fcfafd) ;
+    border-bottom: solid 4px black;
 }
 #banner-noti{
     padding-top: 1%;
@@ -42,7 +42,7 @@
     height: 100px;
     padding-left: 10%;
     padding-top: 20px;
-    border-bottom: solid 4px black;
+    
 }
 #autor div{
     font-family: Arial, Helvetica, sans-serif;
@@ -61,8 +61,22 @@
     border-radius: 5px;
     width: 38%;
     height: 200px;
-    float: inline-end;
+    float: right;
     margin-left: 20px;
+}
+#txt-news2{
+    padding-left: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    text-align: justify;
+}
+#txt-news2 img{
+    border: solid 1px black;
+    border-radius: 5px;
+    width: 38%;
+    height: 200px;
+    float: left;
+    margin-right: 20px;
 }
 #gal-news1 {
     position: relative;
@@ -82,5 +96,6 @@
     text-shadow: 2px 2px #e0cbf1;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
+    float: inline-end;
 
 }
