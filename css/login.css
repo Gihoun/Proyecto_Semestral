@@ -4,6 +4,7 @@ main{
     background-size: cover;
     margin: auto;
     padding: 0;
+    min-height: 71.1vh;
 }
 #contact-box{
     background-color: ghostwhite;
@@ -24,6 +25,7 @@ main{
 .user-img img{
     width: 100px;
     height: 100px;
+    box-shadow: 0px 0px 3px #848484;
 }
 
 #for-input{
@@ -70,7 +72,8 @@ main{
 }
 
 .forgot a{
-    color: white;
+    color: rgb(29, 27, 27);
+    font-size: medium;
 }
 
 :root {
@@ -120,6 +123,11 @@ main section{
     }
     .width-100 {
         width: 100%;
+    }
+    .modal-dialog{
+        position: absolute;
+        top: 20%;
+        left: 20%;
     }
 }
 
