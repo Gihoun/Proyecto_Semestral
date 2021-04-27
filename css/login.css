@@ -10,6 +10,9 @@ main{
     background-color: ghostwhite;
     padding: 5px;
     border-radius: 10px;
+    max-width: 150vh;
+    box-shadow: 0px 0px 3px #848484;
+
 }
 .modal-content{
     background-color: #dde2e7;
@@ -75,7 +78,10 @@ main{
     color: rgb(29, 27, 27);
     font-size: medium;
 }
-
+textarea {
+    width: 300px;
+    height: 150px;
+  }
 :root {
     --color-dark: #15181f;
     --color-dark-x: #2d343f;
@@ -89,13 +95,12 @@ main{
 }
 
 main section{
-    padding: 3rem;
+    margin: auto;
+    padding: 5rem;
 }
-
 
 .form-control{
     border-radius: .2rem;
-    padding: 1.5rem 1rem;
 }
 
 .register-bg {
