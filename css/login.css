@@ -1,20 +1,17 @@
-header{
-    background-color: white;
-}
-
-body{
-    background: url(../img/Icon/background.jpg) no-repeat center center fixed;
+@import url(footer.css);
+main{
+    background: linear-gradient(#f4e7ff, #9c9ce9);
     background-size: cover;
-}
-
-.main-section{
     margin: auto;
-    margin-top: 25%;
     padding: 0;
 }
-
+#contact-box{
+    background-color: ghostwhite;
+    padding: 5px;
+    border-radius: 10px;
+}
 .modal-content{
-    background-color: #3b4652;
+    background-color: #dde2e7;
     opacity: .85;
     padding: 0px 30px;
     box-shadow: 0px 0px 3px #848484;
@@ -29,14 +26,13 @@ body{
     height: 100px;
 }
 
-.form-group input{
+#for-input{
     height: 40px;
     font-size: 10px;
     border: 0;
     padding-left: 54px;
-    border-radius: 5px;    
+    border-radius: 5px;  
 }
-
 .form-group{
     padding: 10px;
 }
@@ -62,6 +58,11 @@ body{
 #button-reg{
     width: 60%;
     margin: 5px 0 25px;
+    border-color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+}
+#button-reg:hover{
+    background-color: rgb(207, 191, 221);
 }
 
 .forgot{
@@ -80,45 +81,43 @@ body{
     --color-grey: #f5f6f8;
 }
 
-.bg-light {
-    background-color: var(--color-light)!important;
-}
-
-.bg-dark {
-    background-color: var(--color-dark)!important;
-}
-
 .p-6 {
     padding: 4rem 7rem;
 }
 
-.contact-box {
+main section{
     padding: 3rem;
 }
 
-.form-control {
-    background-color: var(--color-dark-xx);
-    border: 2px solid var(--color-dark-xx);
+
+.form-control{
     border-radius: .2rem;
     padding: 1.5rem 1rem;
 }
 
 .register-bg {
     background-image: url(../img/Icon/hero.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-}
+    min-height: 400px; 
 
+}
+#boton:hover{
+    background-color: rgb(207, 191, 221);
+}
+#boton{
+    border-color: cornflowerblue;
+    color: darkblue;
+}
 @media (max-width: 575.98px) {
     .p-6 {
         padding: 2rem;
     }
-
-    .contact-box {
+    main section {
         padding: 0;
     }
-
+    #contact-box{
+        padding: 0px;
+        width: 102%;
+    }
     .width-100 {
         width: 100%;
     }
