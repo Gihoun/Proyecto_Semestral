@@ -1,3 +1,0 @@
-function validar_form(){
-    
-}
