@@ -11,10 +11,10 @@ class coment{
         this.apellido=apellido;
     }
     setEmail(email){
-        this.setemail=email;
+        this.email=email;
     }
     setComentario(comentario){
-        this.setcomentario=comentario;
+        this.comentario=comentario;
     }
 
     getNombre(){
