@@ -2,9 +2,13 @@ class coment{
     nombre;
     email;
     comentario;
+    apellido;
 
     setNombre(nombre){
         this.nombre=nombre;
+    }
+    setApellido(apellido){
+        this.apellido=apellido;
     }
     setEmail(email){
         this.setemail=email;
@@ -16,6 +20,9 @@ class coment{
     getNombre(){
         return this.nombre;
     }
+    getApellido(){
+        return this.apellido;
+    }
     getEmail(){
         return this.email;
     }
@@ -23,7 +30,7 @@ class coment{
         return this.comentario;
     }
     print(){
-        return 'nombre: '+this.getNombre()+' email:'+this.getEmail+' comentario:'+this.getComentario;
+        return 'nombre: '+this.getNombre()+' apellido:'+this.getApellido()+' email:'+this.getEmail()+' comentario:'+this.getComentario();
     }
 
 }
