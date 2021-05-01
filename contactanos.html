@@ -109,39 +109,45 @@
         </nav>
         <!--Formulario Contacto-->
         <section class="container-fluid bg-contacto">
-                <div class="container-fluid animate__animated animate__fadeInLeft">
-                    <div class="form-contact">
-                        <h2>Contactanos</h2>
-                        <form>
-                            <div class="form-row mb-2">
-                                <div class="form-group col-md-6">
-                                    <label class="font-weight-bold">Nombre <span class="text-danger">*</span></label>
-                                    <input id="txtnombre" type="text" class="form-control" placeholder="Tu nombre" required>
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <label class="font-weight-bold">Apellido <span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control" placeholder="Tu apellido" required>
-                                </div>
-                            </div>
-                            <div class="form-group mb-3">
-                                <label class="font-weight-bold">Correo electrónico <span
+            <div class="container-fluid animate__animated animate__fadeInLeft">
+                <div class="form-contact">
+                    <h2>Contactanos</h2>
+                    <form>
+                        <div class="form-row mb-2">
+                            <div class="form-group col-md-6">
+                                <label class="font-weight-bold">Nombre <span id="nombre_span"
                                         class="text-danger">*</span></label>
-                                <input id="txtemail" type="email" class="form-control" placeholder="Ingresa tu correo electrónico"
-                                    required>
+                                <input id="txtnombre" type="text" class="form-control" placeholder="Tu nombre"
+                                    oninput="validar_nombre()" required>
                             </div>
-                            <div class="form-group mb-5">
-                                <label class="font-weight-bold">Comentarios<span class="text-danger">*</span></label>
-                                <textarea id="txtcoment" class="form-control" placeholder="Dejanos tus Comentarios"></textarea>
+                            <div class="form-group col-md-6">
+                                <label class="font-weight-bold">Apellido <span id="apellido_span"
+                                        class="text-danger">*</span></label>
+                                <input id="txtapellido" type="text" class="form-control" placeholder="Tu apellido"
+                                    oninput="validar_apellido()" required>
                             </div>
-                            <div class="text-end">
-                                <button class="btn btn-outline width-100 col-btn-sm" type="reset"
-                                    id="btn_buscar">Limpiar</button>
-                                <button class="btn btn-outline width-100 col-btn-sm" type="submit"
-                                    id="btn_buscar">Enviar</button>
-                            </div>
-                        </form>
-                    </div>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label class="font-weight-bold">Correo electrónico <span id="mail_span"
+                                    class="text-danger">*</span></label>
+                            <input id="txtmail" type="email" class="form-control"
+                                placeholder="Ingresa tu correo electrónico" oninput="validar_email()" required>
+                        </div>
+                        <div class="form-group mb-5">
+                            <label class="font-weight-bold">Comentarios<span id="com_span"
+                                    class="text-danger">*</span></label>
+                            <textarea id="txtcoment" class="form-control"
+                                placeholder="Dejanos tus Comentarios"></textarea>
+                        </div>
+                        <div class="text-end">
+                            <button class="btn btn-outline width-100 col-btn-sm" type="reset" id="btn_buscar"
+                                onclick="limpiar_array()">Limpiar</button>
+                            <button class="btn btn-outline width-100 col-btn-sm" type="submit" id="btn_buscar"
+                                onclick="validar_form()" onmouseover="validar_comentario()">Enviar</button>
+                        </div>
+                    </form>
                 </div>
+            </div>
         </section>
     </main>
     <!--Footer renovar si es necesario-->
@@ -183,14 +189,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
         </script>
-        <script>
-            function validar_campos(){
-                coment = new comentario();
-                
-    
-    
-            }
-        </script>
+    <script src="js/clases.js"></script>
+    <script src="js/validarform.js"></script>
 </body>
 
 </html>
