@@ -34,3 +34,39 @@ class coment{
     }
 
 }
+class new_user{
+    nombre;
+    email;
+    passwd;
+    apellido;
+
+    setNombre(nombre){
+        this.nombre=nombre;
+    }
+    setApellido(apellido){
+        this.apellido=apellido;
+    }
+    setEmail(email){
+        this.email=email;
+    }
+    setPasswd(passwd){
+        this.passwd=passwd;
+    }
+
+    getNombre(){
+        return this.nombre;
+    }
+    getApellido(){
+        return this.apellido;
+    }
+    getEmail(){
+        return this.email;
+    }
+    getPasswd(){
+        return this.passwd;
+    }
+    print(){
+        return 'nombre: '+this.getNombre()+' apellido:'+this.getApellido()+' email:'+this.getEmail()+' contraseña:'+this.getPasswd();
+    }
+
+}

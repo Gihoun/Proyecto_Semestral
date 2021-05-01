@@ -1,11 +1,12 @@
-function validar_form(){
+function validar_reg(){
     var rn = validar_nombre();
     var ra = validar_apellido();
     var re = validar_email();
-    var rc = validar_comentario();
-    if(rn==true && ra==true && re==true && rc==true){
-        alert('todo ok... comentario recibido')
-        grabar_coment()
+    var rp = validar_pass();
+    var rchk = validar_check();
+    if(rn==true && ra==true && re==true && rp==true && rchk==true){
+        alert('Registrando Nuevo USUARIO')
+        grabar_usuario()
         return true
     }else{
         alert('el formulario tiene errores no sera enviado')
@@ -51,87 +52,40 @@ function validar_email(){
        document.getElementById('mail_span').innerText="* invalido: debe contener @ y dominio *.xxx"
        return (false)
 }
-function validar_comentario(){
+function validar_pass(){
 
-    var com = document.getElementById('txtcoment').value;
-    if(com.length == 0){
-        document.getElementById('com_span').innerText="* no puedes dejar la caja de comentarios vacia"
+    var com = document.getElementById('txtpass').value;
+    if(com.length < 6){
+        document.getElementById('pass_span').innerText="* minimo 6 caracteres"
         return( false)
 
     }else {
-        document.getElementById('com_span').innerText="* ok"
+        document.getElementById('pass_span').innerText="* ok"
         return(true)
     }
 
     
 }
+function validar_check(){
+    var chk= document.getElementById('check_box').checked;
+    if(chk==true){
+        return true
+    }else{
+        alert('porfavor acepte los terminos')
+    }
 
-
-function grabar_comentario(){
-    
-    var arreglo = new Array();
-    var ind=0;
-    
-    var nombre = document.getElementById('txtnombre').value;
-    var apellido = document.getElementById('txtapellido').value;
-    var email = document.getElementById('txtmail').value
-    var comentario = document.getElementById('txtcoment').value;
-    var key = nombre+ind.toString();
-    com = new coment();
-    com.setNombre(nombre);
-    com.setApellido(apellido);
-    com.setEmail(email);
-    com.setComentario(comentario);
-    console.log(com.print());
-    arreglo[ind] = JSON.stringify(com);
-    localStorage.setItem(key,arreglo);
-    
-    alert('Grabo comentario');
-       
-
-    
-    
 }
+
+
 function limpiar_array(){
     var arr = new Array(5);
-    arr= [0,1,2,3,4,5]
+    arr= [0,1,2,3,4,5,6,7,8,9]
     for (let index = 0; index < arr.length; index++) {
         localStorage.setItem(arr[index],'vacio');
        
     }
 
 }
-function grabar_coment(){
-    
-    var arreglo = new Array();
-    var cont = 'vacio';
-    var ind = 0;
-    var nombre = document.getElementById('txtnombre').value;
-    var apellido = document.getElementById('txtapellido').value;
-    var email = document.getElementById('txtmail').value
-    var comentario = document.getElementById('txtcoment').value;
-
-    for (let i = 0; i < localStorage.length; i++) {
-        let valor = localStorage.getItem(i);
-
-        if (valor == cont){
-            var key = i.toString();
-            com = new coment();
-            com.setNombre(nombre);
-            com.setApellido(apellido);
-            com.setEmail(email);
-            com.setComentario(comentario);
-            console.log(com.print());
-            arreglo[ind] = JSON.stringify(com);
-            localStorage.setItem(key,arreglo);
-            
-            alert('su comentario ha sido registrado');
-            return true
-        }
-        
-    }
-}
-
 
 function grabar_usuario(){
     

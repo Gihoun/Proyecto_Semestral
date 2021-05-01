@@ -110,7 +110,7 @@
                         <h1 class="font-weight-bold mb-3">Crea tu cuenta gratis</h1>
                         <div class="form-group">
                             <button class="btn btn-outline d-inline-block mr-2 mb-3 width-100"
-                                id="button-reg"><i class="icon ion-logo-google lead align-middle mr-2"></i> Google
+                                id="button-reg" onmouseover="limpiar_array()"><i class="icon ion-logo-google lead align-middle mr-2"></i> Google
                             </button>
                             <button class="btn btn-outline d-inline-block mb-3 width-100"
                                 id="button-reg"><i class="icon ion-logo-facebook lead align-middle mr-2"></i>
@@ -120,31 +120,31 @@
                         <form>
                             <div class="form-row mb-2">
                                 <div class="form-group col-md-6" >
-                                    <label class="font-weight-bold">Nombre <span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control border border-dark" id="for-input" placeholder="Tu nombre" required>
+                                    <label class="font-weight-bold">Nombre <span id="nombre_span" class="text-danger">*</span></label>
+                                    <input id="txtnombre" type="text" class="form-control border border-dark" id="for-input" placeholder="Tu nombre" oninput="validar_nombre()" required>
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <label class="font-weight-bold">Apellido <span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control border border-dark" id="for-input" placeholder="Tu apellido" required>
+                                    <label class="font-weight-bold">Apellido <span id="apellido_span" class="text-danger">*</span></label>
+                                    <input id="txtapellido" type="text" class="form-control border border-dark" id="for-input" placeholder="Tu apellido" oninput="validar_apellido()" required>
                                 </div>
                             </div>
                             <div class="form-group mb-3" >
                                 <label class="font-weight-bold">Correo electrónico <span
-                                        class="text-danger">*</span></label>
-                                <input type="email" class="form-control border border-dark" id="for-input" placeholder="Ingresa tu correo electrónico" required>
+                                    id="mail_span" class="text-danger">*</span></label>
+                                <input id="txtmail" type="email" class="form-control border border-dark" id="for-input" placeholder="Ingresa tu correo electrónico" oninput="validar_email()" required>
                             </div>
                             <div class="form-group mb-3">
-                                <label class="font-weight-bold">Contraseña <span class="text-danger">*</span></label>
-                                <input type="password" class="form-control border border-dark" id="for-input" placeholder="Ingresa una contraseña" required>
+                                <label class="font-weight-bold">Contraseña <span id="pass_span" class="text-danger">*</span></label> 
+                                <input id="txtpass" type="password" class="form-control border border-dark" id="for-input" placeholder="Ingresa una contraseña" oninput="validar_pass()" required>
                             </div>
                             <div class="form-group mb-5">
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" required>
+                                    <input id="check_box" class="form-check-input" type="checkbox" required>
                                     <label class="form-check-label text-muted">............Aceptas terminos de
                                         privacidad y condiciones</label>
                                 </div>
                             </div>
-                            <button class="btn btn-outline width-100" id="button-reg">Regístrate</button>
+                            <button class="btn btn-outline width-100" id="button-reg" onclick="validar_reg()" onmouseover="validar_check()">Regístrate</button>
                         </form>
                     </div>
                 </div>
@@ -191,6 +191,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
         </script>
+        <script src="js/clases.js"></script>
+        <script src="js/validarReg.js"></script>
 </body>
 
 </html>
