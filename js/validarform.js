@@ -5,7 +5,7 @@ function validar_form(){
     var rc = validar_comentario();
     if(rn==true && ra==true && re==true && rc==true){
         alert('todo ok... comentario recibido')
-        grabar_comentario()
+        grabar_coment()
         return true
     }else{
         alert('el formulario tiene errores no sera enviado')
@@ -67,14 +67,16 @@ function validar_comentario(){
 }
 
 
-function grabar_comentario() {
+function grabar_comentario(){
+    
     var arreglo = new Array();
     var ind=0;
-
+    
     var nombre = document.getElementById('txtnombre').value;
     var apellido = document.getElementById('txtapellido').value;
     var email = document.getElementById('txtmail').value
     var comentario = document.getElementById('txtcoment').value;
+    var key = nombre+ind.toString();
     com = new coment();
     com.setNombre(nombre);
     com.setApellido(apellido);
@@ -82,7 +84,57 @@ function grabar_comentario() {
     com.setComentario(comentario);
     console.log(com.print());
     arreglo[ind] = JSON.stringify(com);
-    localStorage.setItem('registros',arreglo);
+    localStorage.setItem(key,arreglo);
+    
     alert('Grabo comentario');
-    ind++;
+       
+
+    
+    
+}
+function limpiar_array(){
+    var arr = new Array(5);
+    arr= [0,1,2,3,4,5]
+    for (let index = 0; index < arr.length; index++) {
+        localStorage.setItem(arr[index],'vacio');
+       
+    }
+
+}
+function grabar_coment(){
+    
+    var arreglo = new Array();
+    var cont = 'vacio';
+    var ind = 0;
+    var nombre = document.getElementById('txtnombre').value;
+    var apellido = document.getElementById('txtapellido').value;
+    var email = document.getElementById('txtmail').value
+    var comentario = document.getElementById('txtcoment').value;
+
+    for (let i = 0; i < localStorage.length; i++) {
+        let valor = localStorage.getItem(i);
+
+        if (valor == cont){
+            var key = i.toString();
+            com = new coment();
+            com.setNombre(nombre);
+            com.setApellido(apellido);
+            com.setEmail(email);
+            com.setComentario(comentario);
+            console.log(com.print());
+            arreglo[ind] = JSON.stringify(com);
+            localStorage.setItem(key,arreglo);
+            
+            alert('su comentario ha sido registrado');
+            return true
+        }
+        
+    }
+    
+    
+    
+       
+
+    
+    
 }
