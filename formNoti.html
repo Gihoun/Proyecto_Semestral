@@ -108,20 +108,20 @@
                         <form>
                             <div class="form-row mb-1">
                                 <div class="form-group col-md-10">
-                                    <label class="font-weight-bold">Autor <span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control" id="for-input" placeholder="Tu nombre"
-                                        required>
+                                    <label class="font-weight-bold">Autor <span id="nombre_span"class="text-danger">*</span></label>
+                                    <input id="txtnombre" type="text" class="form-control" id="for-input" placeholder="Tu nombre"
+                                        oninput="validar_nombre()" required>
                                 </div>
                                 <div class="form-group col-md-10">
-                                    <label for="formFileMultiple" class="form-label">Sube tus Imágenes<span class="text-danger">*</span></label>
-                                    <input class="form-control" type="file" id="formFileMultiple" multiple>
+                                    <label for="formFileMultiple" class="form-label">Sube tus Imágenes<span id="img_span" class="text-danger">*</span></label>
+                                    <input id="imgfile" class="form-control" type="file" id="formFileMultiple" multiple onclick="validar_file()" required>
                                 </div>
                             </div>
                         </form>
                         <div class="form-group " style="width: 84.1%;">
-                            <label class="font-weight-bold">Categoria <span class="text-danger">*</span></label>
-                            <select class="form-select form-select" aria-label=".form-select-sm example">
-                                <option selected>Seleciona un Categoria</option>
+                            <label class="font-weight-bold">Categoria <span class="text-danger" id="categoria_span">*</span></label>
+                            <select id="txtcategoria" class="form-select form-select" aria-label=".form-select-sm example" onclick="validar_categoria()" required>
+                                <option selected>Selecciona una Categoria</option>
                                 <option value="1">Nacional</option>
                                 <option value="2">Internacional</option>
                                 <option value="3">Deporte</option>
@@ -129,15 +129,15 @@
                         </div>
                         <form>
                             <div class="form-group mb-5">
-                                <label class="font-weight-bold">Redacta tu Noticia<span
+                                <label class="font-weight-bold">Redacta tu Noticia<span id="noticia_span"
                                         class="text-danger">*</span></label>
-                                <textarea class="form-control" placeholder="Redacta"></textarea>
+                                <textarea id="txtnoticia" class="form-control" placeholder="Redacta" oninput="validar_txt()" required></textarea>
                             </div>
                             <div class="text-end">
                                 <button class="btn btn-outline width-100 col-btn-sm mb-1" type="reset"
                                     id="boton">Limpiar</button>
                                 <button class="btn btn-outline width-100 col-btn-sm mb-1" type="submit"
-                                    id="boton">Enviar</button>
+                                    id="boton" onmouseover="validar_file()" onclick="validar_noticia()">Enviar</button>
                             </div>
                         </form>
                     </div>
@@ -185,6 +185,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
         crossorigin="anonymous"></script>
+        <script src="js/validar_noticia.js"></script>
 </body>
 
 </html>

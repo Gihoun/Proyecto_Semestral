@@ -70,3 +70,39 @@ class new_user{
     }
 
 }
+class noticia{
+    nombre;
+    imagen;
+    categoria;
+    texto_noticia;
+
+    setNombre(nombre){
+        this.nombre=nombre;
+    }
+    setImagen(imagen){
+        this.imagen=imagen;
+    }
+    setCategoria(categoria){
+        this.email=email;
+    }
+    setTexto(texto_noticia){
+        this.texto_noticia=texto_noticia;
+    }
+
+    getNombre(){
+        return this.nombre;
+    }
+    getImagen(){
+        return this.imagen;
+    }
+    getCategoria(){
+        return this.categoria;
+    }
+    getTexto(){
+        return this.texto_noticia;
+    }
+    print(){
+        return 'nombre: '+this.getNombre()+' img:'+this.getImagen()+' categoria:'+this.getCategoria()+' texto noticia:'+this.getTexto();
+    }
+
+}
