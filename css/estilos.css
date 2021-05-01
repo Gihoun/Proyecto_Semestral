@@ -65,7 +65,7 @@ body{
 }
 .bg-contacto{
     background: url(../img/bg-op/Contact-01.png);
-    background-size: cover;
+    background-size: cover;;
     padding: 10px;
     border-radius: 5px;
 }
