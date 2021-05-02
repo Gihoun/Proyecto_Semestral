@@ -76,7 +76,6 @@ function grabar_comentario() {
     console.log(com.print());
     arreglo[ind] = JSON.stringify(com);
     localStorage.setItem('registros',arreglo);
-    alert('Grabo comentario');
     ind++;
 }
 
@@ -112,43 +111,8 @@ function grabar_coment(){
             console.log(com.print());
             arreglo[ind] = JSON.stringify(com);
             localStorage.setItem(key,arreglo);
-            
-            alert('Su Comentario ha sido enviado');
             return true
         }
         
     }
-}
-
-
-function grabar_usuario(){
-    
-    var arreglo = new Array();
-    var cont = 'vacio';
-    var ind = 0;
-    var nombre = document.getElementById('txtnombre').value;
-    var apellido = document.getElementById('txtapellido').value;
-    var email = document.getElementById('txtmail').value
-    var pass = document.getElementById('txtpass').value;
-
-    for (let i = 0; i < localStorage.length; i++) {
-        let valor = localStorage.getItem(i);
-
-        if (valor == cont){
-            var key = i.toString();
-            user = new new_user();
-            user.setNombre(nombre);
-            user.setApellido(apellido);
-            user.setEmail(email);
-            user.setPasswd(pass);
-            console.log(user.print());
-            arreglo[ind] = JSON.stringify(user);
-            localStorage.setItem(key,arreglo);
-            
-            alert('nuevo usuario registrado');
-            return true
-        }
-        
-    }
-   
 }

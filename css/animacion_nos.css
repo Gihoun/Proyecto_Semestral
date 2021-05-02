@@ -24,3 +24,7 @@
     border-color: cornflowerblue;
     color: darkblue;
 }
+#tarjeta a{
+    text-decoration: none;
+    color: black;
+}

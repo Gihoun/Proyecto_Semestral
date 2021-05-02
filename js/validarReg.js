@@ -33,10 +33,10 @@ function validar_nombre() {
 function validar_apellido() {
     var appel = document.getElementById('txtapellido').value;
     if (appel.trim().length < 3) {
-        document.getElementById('apellido_span').innerText = "* el apellido debe tener al menos 3 caracteres"
+        document.getElementById('apellido_span').innerText = "* El apellido debe tener al menos 3 caracteres"
         return false;
     } else if (appel.trim().length >= 3) {
-        document.getElementById('apellido_span').innerText = "ok"
+        document.getElementById('apellido_span').innerText = "*"
         return true;
     }
 
@@ -46,7 +46,7 @@ function validar_email() {
         document.getElementById('mail_span').innerText = "*"
         return true;
     } else {
-        document.getElementById('mail_span').innerText = "* invalido: debe contener @ y dominio *.xxx"
+        document.getElementById('mail_span').innerText = "* Invalido: debe contener @ y dominio *.xxx"
         return false;
     }
 
@@ -112,9 +112,7 @@ function grabar_usuario() {
             console.log(user.print());
             arreglo[ind] = JSON.stringify(user);
             localStorage.setItem(key, arreglo);
-
-            alert('nuevo usuario registrado');
-            return true
+            return true;
         }
 
     }
