@@ -113,9 +113,14 @@
                                         oninput="validar_nombre()" required>
                                 </div>
                                 <div class="form-group col-md-10">
-                                    <label for="formFileMultiple" class="form-label">Sube tus Imágenes<span id="img_span" class="text-danger">*</span></label>
-                                    <input id="imgfile" class="form-control" type="file" accept="image/*" id="formFileMultiple" multiple onclick="validar_file()" required>
+                                    <label for="formFileMultiple" class="form-label">Sube tus Imágenes<span id="img_span1" class="text-danger">*</span></label>
+                                    <input id="imgfile1" class="form-control" type="file" accept="image/*" id="formFileSingle" onchange="loadFile1(event)" multiple onclick="validar_file()" required>
                                 </div>
+                                <div class="form-group col-md-10">
+                                    <label for="formFileMultiple" class="form-label">Sube tus Imágenes<span id="img_span2" class="text-danger">*</span></label>
+                                    <input id="imgfile2" class="form-control" type="file" accept="image/*" id="formFileMultiple" onchange="loadFile2(event)" multiple onclick="validar_file()" required>
+                                </div>
+                                
                             </div>
                         </form>
                         <div class="form-group " style="width: 84.1%;">
@@ -134,14 +139,26 @@
                                 <textarea id="txtnoticia" class="form-control" placeholder="Redacta" oninput="validar_txt()" required></textarea>
                             </div>
                             <div class="text-end">
+                                <button class="btn btn-outline width-100 col-btn-sm mb-1" type=""
+                                    id="boton" onclick="esconder()">galeria</button>
                                 <button class="btn btn-outline width-100 col-btn-sm mb-1" type="reset"
                                     id="boton">Limpiar</button>
                                 <button class="btn btn-outline width-100 col-btn-sm mb-1" type="submit"
                                     id="boton" onmouseover="validar_file()" onclick="validar_noticia()">Enviar</button>
                             </div>
                         </form>
+                        
                     </div>
-
+                    
+                    <div id="gale" class="row-3" style="margin-top: 30px; background-color: rgb(103, 123, 160); border-width: 20px; border-radius: 10px; border-color: darkblue;" hidden=true>
+                        
+                        
+                        <img id="output1" width="200" height="200"  />
+                        <img id="output2" width="200" height="200" />
+                        <img id="output1" width="200" height="200"  />
+                        <img id="output2" width="200" height="200" />
+                             
+                    </div>
                 </div>
             </div>
         </section>
@@ -186,6 +203,17 @@
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
         crossorigin="anonymous"></script>
         <script src="js/validar_noticia.js"></script>
+        <script>
+            var loadFile1 = function(event) {
+                var image = document.getElementById('output1');
+                image.src = URL.createObjectURL(event.target.files[0]);
+            };
+            var loadFile2 = function(event) {
+                var image = document.getElementById('output2');
+                image.src = URL.createObjectURL(event.target.files[0]);
+            };
+            
+        </script>
 </body>
 
 </html>

@@ -57,21 +57,39 @@ function validar_txt(){
 }
 
 function validar_file(){
-    var arch= document.getElementById('imgfile').value;
+    var img1= document.getElementById('imgfile1').value;
+    var img2= document.getElementById('imgfile2').value;
     //var file = document.getElementById('imgfile');
     //ar imgdata = getBase64Image(file);
 
-    if ( arch ==''){
-        document.getElementById('img_span').innerText="* debe seleccionar al menos 1 imagen"
+    if ( img1 =='' || img2 ==''){
+        document.getElementById('img_span1').innerText="* faltan por subir imagenes";
+        document.getElementById('img_span2').innerText="* faltan por subir imagenes";
         return (false);
-    }else {
-        document.getElementById('img_span').innerText="ok"
-       // localStorage.setItem("imagen",imgdata);
-       
-        return (true)
+    
+    }else if((img2 =!'') && (img1 =! '')){
+        document.getElementById('img_span2').innerText="ok";
+        document.getElementById('img_span1').innerText="ok";
+        return (true);
+    }else{
+        return (false);
+    }
+}
+
+
+
+function esconder(){
+    var galeria = document.getElementById('gale');
+    if(galeria.hidden==true){
+        galeria.hidden=false;
+        galeria.className = "animate__animated animate__backInDown"
+    }else if(galeria.hidden==false){
+        galeria.className = "animate__animated animate__fadeOutUp"
+        galeria.hidden = true;
+        
     }
 
-
+    
 }
 
 function getBase64Image(img) {
