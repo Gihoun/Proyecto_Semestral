@@ -58,29 +58,39 @@ function validar_txt(){
 
 function validar_file(){
     var arch= document.getElementById('imgfile').value;
+    //var file = document.getElementById('imgfile');
+    //ar imgdata = getBase64Image(file);
+
     if ( arch ==''){
         document.getElementById('img_span').innerText="* debe seleccionar al menos 1 imagen"
         return (false);
     }else {
         document.getElementById('img_span').innerText="ok"
+       // localStorage.setItem("imagen",imgdata);
+       
         return (true)
     }
 
 
 }
 
+function getBase64Image(img) {
+    
+    var canvas = document.createElement("canvas");
+    canvas.width = img.width;
+    canvas.height = img.height;
 
-function limpiar_array(){
-    var arr = new Array(5);
-    arr= [0,1,2,3,4,5,6,7,8,9]
-    for (let index = 0; index < arr.length; index++) {
-        localStorage.setItem(arr[index],'vacio');
-       
-    }
+    var ctx = canvas.getContext("2d");
+    ctx.drawImage(img, 0, 0);
 
+    var dataURL = canvas.toDataURL("image/png");
+
+    return dataURL.replace(/^data:image\/(png|jpg);base64,/, "");
 }
 
-function grabar_usuario(){
+
+
+function grabar_noticia(){
     
     var arreglo = new Array();
     var cont = 'vacio';
